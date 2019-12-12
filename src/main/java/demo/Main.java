@@ -17,9 +17,8 @@ public class Main
 			
 			try
 			{
-			
 			Configuration configuration=new Configuration().configure("hibernate.cfg.xml");
-					//.addAnnotatedClass(Dept.class);
+			//.addAnnotatedClass(Dept.class);
 			SessionFactory sFactory=configuration.buildSessionFactory();
 			
 			Session session=sFactory.openSession();
