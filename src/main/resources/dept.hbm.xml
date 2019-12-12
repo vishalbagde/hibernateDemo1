@@ -11,6 +11,9 @@
    <id name="dept_no" column="dept_no">  </id>
    <property name="dept_name" column="dept_name"></property>  
    <property name="loc" column="loc"></property>  
-  </class>  
+ </class>  
+ 
+ 
+   
             
  </hibernate-mapping>  
