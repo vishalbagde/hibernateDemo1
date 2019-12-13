@@ -2,15 +2,16 @@ package table;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-
 @Entity
 public class Laptop {
 	@Id
 	int laptop_id;
 	String laptop_name;
+	
+	@ManyToOne
+	private Student student;
 
 	public Laptop() {
 		super();

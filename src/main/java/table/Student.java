@@ -8,7 +8,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.Transient;
 
 @Entity
 public class Student {
@@ -20,15 +19,33 @@ public class Student {
 	@OneToOne
 	Address address;
 
-	@OneToMany
+	@OneToMany (mappedBy = "student")
 	List<Laptop> laptop = new ArrayList<Laptop>();
-
+	
 	@ManyToOne
 	Country country;
+		
+	@ManyToMany
+	List<Course> courses = new ArrayList<Course>();
 
 	public Student() {
 		super();
 	}
+		
+	public Student(int rollno, StudentName name, int age, Address address, List<Laptop> laptop, Country country,
+			List<Course> courses) {
+		super();
+		this.rollno = rollno;
+		this.name = name;
+		this.age = age;
+		this.address = address;
+		this.laptop = laptop;
+		this.country = country;
+		this.courses=courses;
+	}
+
+
+
 
 	public Student(int rollno, StudentName name, int age, Address address, List<Laptop> laptop, Country country) {
 		super();

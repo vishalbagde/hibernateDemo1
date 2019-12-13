@@ -3,9 +3,14 @@ select * from student;
 select * from laptop;
 select * from student_laptop;
 select * from country;
+select * from course;
+select * from student_course;
 
 drop table student_laptop;
+drop table student_country;
+drop table student_course;
 drop table laptop;
 drop table student;	
 drop table address;
 drop table country;
+drop table course;

@@ -12,17 +12,14 @@
         <property name="hibernate.connection.username">axelor</property>
         <property name="hibernate.connection.password">axelor</property>
     
-  
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-        
-        <property name="show_sql">true</property>
- 
-  
+    
         <!-- Update database on startup -->
         <property name="hibernate.hbm2ddl.auto">create</property>
-  		
         
-         
+        <property name="show_sql">true</property>
+  		
+       
     </session-factory>
 </hibernate-configuration>
