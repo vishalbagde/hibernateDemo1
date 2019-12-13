@@ -11,41 +11,30 @@ public class Laptop {
 	@Id
 	int laptop_id;
 	String laptop_name;
-	
-	
-	@ManyToOne
-	Student student;
-	
+
 	public Laptop() {
 		super();
 	}
-	
-	
+
 	public Laptop(int laptop_id, String laptop_name) {
 		super();
 		this.laptop_id = laptop_id;
 		this.laptop_name = laptop_name;
-	}
-	
-	
-
-	public Laptop(int laptop_id, String laptop_name, Student student) {
-		super();
-		this.laptop_id = laptop_id;
-		this.laptop_name = laptop_name;
-		this.student = student;
 	}
 
 
 	public int getLaptop_id() {
 		return laptop_id;
 	}
+
 	public void setLaptop_id(int laptop_id) {
 		this.laptop_id = laptop_id;
 	}
+
 	public String getLaptop_name() {
 		return laptop_name;
 	}
+
 	public void setLaptop_name(String laptop_name) {
 		this.laptop_name = laptop_name;
 	}
@@ -54,9 +43,5 @@ public class Laptop {
 	public String toString() {
 		return "Laptop [laptop_id=" + laptop_id + ", laptop_name=" + laptop_name + "]";
 	}
-	
-	
-	
-	
 
 }

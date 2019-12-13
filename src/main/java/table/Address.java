@@ -11,14 +11,11 @@ public class Address {
 	String area;
 	String street;
 	String city;
-	
-	
-	
+
 	public Address() {
 		super();
 	}
-	
-	
+
 	public Address(int address_id, int ploat_no, String area, String street, String city) {
 		super();
 		this.address_id = address_id;
@@ -28,16 +25,13 @@ public class Address {
 		this.city = city;
 	}
 
-
 	public int getAddress_id() {
 		return address_id;
 	}
 
-
 	public void setAddress_id(int address_id) {
 		this.address_id = address_id;
 	}
-
 
 	public Address(int ploat_no, String area, String street, String city) {
 		super();
@@ -46,36 +40,42 @@ public class Address {
 		this.street = street;
 		this.city = city;
 	}
+
 	public int getPloat_no() {
 		return ploat_no;
 	}
+
 	public void setPloat_no(int ploat_no) {
 		this.ploat_no = ploat_no;
 	}
+
 	public String getArea() {
 		return area;
 	}
+
 	public void setArea(String area) {
 		this.area = area;
 	}
+
 	public String getStreet() {
 		return street;
 	}
+
 	public void setStreet(String street) {
 		this.street = street;
 	}
+
 	public String getCity() {
 		return city;
 	}
+
 	public void setCity(String city) {
 		this.city = city;
 	}
+
 	@Override
 	public String toString() {
 		return "Address [ploat_no=" + ploat_no + ", area=" + area + ", street=" + street + ", city=" + city + "]";
 	}
-	
-	
-	
 
 }

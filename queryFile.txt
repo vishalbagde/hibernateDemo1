@@ -1,0 +1,11 @@
+select * from address;
+select * from student;
+select * from laptop;
+select * from student_laptop;
+select * from country;
+
+drop table student_laptop;
+drop table laptop;
+drop table student;	
+drop table address;
+drop table country;
