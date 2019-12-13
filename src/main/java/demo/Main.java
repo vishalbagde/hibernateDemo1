@@ -21,7 +21,7 @@ public class Main
 			Country country =new Country(1,"INDIA");
 			Country country1 =new Country(2,"USA");
 			
-			Laptop l1=new Laptop(103,"MAC AIR");
+			Laptop l1=new Laptop(103,"Lenovo");
 			
 			ArrayList<Laptop> list =new ArrayList<Laptop>();
 			list.add(new Laptop(101,"DELL"));
