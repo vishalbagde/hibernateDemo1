@@ -9,9 +9,7 @@ public class Country {
 	@Id
 	int country_id;
 	String country_name;
-	
-	
-	
+
 	public Country(int country_id,String country_name) {
 		super();
 		this.country_id = country_id;

@@ -1,5 +1,4 @@
 package table;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
